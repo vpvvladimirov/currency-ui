@@ -1,13 +1,17 @@
 import './App.css';
-import Header from './components/header/header';
+
+import CurrerncyDetails from './view/currencyDetails/currencyDetail';
 
 const App = () => {
   return (
     <main>
-      <Header />
-      main
+     
+      <CurrerncyDetails />
+
     </main>
   );
 };
 
+
 export default App;
+
