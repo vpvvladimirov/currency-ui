@@ -1,0 +1,36 @@
+.currencyDetailComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 415px;
+  height: 60px;
+  margin: 10px auto;
+  top: 319px;
+  left: 433px;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #48AC98;
+  color: black;
+  font-size: 30px;
+}
+
+.left-text {
+  margin-left: 20px;
+
+}
+
+.right-text {
+  margin-right: 20px;
+  color: #48AC98;
+}
+
+.detailsBox {
+  width: 525px;
+  height: 641px;
+  position: absolute;
+  top: 128px;
+  left: 378px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

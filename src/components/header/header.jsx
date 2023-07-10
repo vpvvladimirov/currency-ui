@@ -13,7 +13,9 @@ const Header = () => {
   };
   return (
     <header className="alivolut-header">
-      <img className="alivolut-logo" src={alivolutLogo} alt="Alivolut" />
+      <div className="alivolut-logo-container">
+        <img className="alivolut-logo" src={alivolutLogo} alt="Alivolut" />
+      </div>
       <button className="logout-icon-btn" onClick={logout} type='button'>
         <img className='logout-icon' src={logoutIcon} alt="Log Out" />
       </button>
