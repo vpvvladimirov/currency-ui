@@ -1,7 +1,3 @@
-body {
-  background-color: rgb(243, 244, 246);
-}
-
 .currency-list-main {
   display: flex;
   flex-direction: column;
