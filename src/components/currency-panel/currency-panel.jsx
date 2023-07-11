@@ -9,11 +9,15 @@ const CurrencyPanel = () => {
     window.location.href = `/currency-info/${testObject.isoCode}`;
   };
 
+  const editOnClick = () => {
+    window.location.href = `/edit-currency/${testObject.isoCode}`;
+  };
+
   return (
     <div className="currency-info">
       <div className="currency-name">{testObject.name} {testObject.isoCode}</div>
       <div className="edit-info-currency-container">
-        <button className="edit-currency-btn" type="button">
+        <button className="edit-currency-btn" type="button" onClick={editOnClick}>
           <img className="edit-currency-icon" src={EditCurrencyIcon} alt="Edit" />
         </button>
         <button className="info-currency-btn" type="button" onClick={infoOnClick}>
