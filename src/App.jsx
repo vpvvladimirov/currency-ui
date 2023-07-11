@@ -5,8 +5,8 @@ import CurrerncyDetails from './view/currencyDetails/currencyDetail';
 const App = () => {
   return (
     <main>
-    <CurrencyList /> 
-    <CurrerncyDetails />
+      <CurrencyList />
+      <CurrerncyDetails />
     </main>
   );
 };
