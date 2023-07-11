@@ -20,17 +20,8 @@ const ExchangeCurrency = () => {
         <h2 className="text">Exchange Currency</h2>
         <div className='container'>
           <div className='border'>
-            <input
+            <input className='inputStyle'
               type='text'
-              style={{
-                fontSize: '20px',
-                width: '100px',
-                height: '50px',
-                border: 'none',
-                marginTop: '15px',
-                marginLeft: '20px',
-                
-              }}
             />
             <div className='currency-menu-container'>
               <select id="dropdown" name='option'>
@@ -42,16 +33,8 @@ const ExchangeCurrency = () => {
           <img src={Layer1} alt="Layer_1" />
 
           <div className='border'>
-            <input
+            <input className='inputStyle'
               type="text"
-              style={{
-                fontSize: '20px',
-                width: '100px',
-                height: '50px',
-                border: 'none',
-                marginTop: '15px',
-                marginLeft: '20px',
-              }}
               readOnly
             />
 

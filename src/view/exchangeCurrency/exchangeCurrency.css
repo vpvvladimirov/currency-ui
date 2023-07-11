@@ -126,4 +126,15 @@ body
   font-family: 'Roboto', sans-serif;
 
 }
+.inputStyle
+{
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  border:none;
+  margin-top: 15px;
+  margin-left:20px;
+  
+
+}
 
