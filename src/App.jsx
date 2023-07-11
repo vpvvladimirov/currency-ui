@@ -14,7 +14,7 @@ const App = () => {
       <Header />
       <Router>
         <Routes>
-          <Route path='/all-currencies' element={<CurrencyList />} />
+          <Route path='/' element={<CurrencyList />} />
           <Route path='/currency-info/:isoCode' element={<CurrencyDetails />} />
           <Route path='/new-transaction' element={<NewTransaction />} />
           <Route path='/edit-currency/:isoCode' element={<EditCurrency />} />

@@ -1,5 +1,4 @@
 import './add-currency.css';
-import { testObject } from '../currency-details/currencyDetail';
 
 const AddCurrency = () => {
   return (
@@ -10,19 +9,19 @@ const AddCurrency = () => {
           <div className="container">
             <div className="label">Name</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.name} />
+              <input type="text" />
             </div>
           </div>
           <div className="container">
             <div className="label">ISO Code</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.isoCode} />
+              <input type="text" />
             </div>
           </div>
           <div className="container">
             <div className="label">Surcharge Percent</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.surchargePerc} />
+              <input type="text" />
             </div>
           </div>
           <div className="add-btn-container">
