@@ -1,0 +1,22 @@
+body {
+  background-color: #F3F4F6;
+}
+
+.currencyDetailsText {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 40px 0 60px 0;
+  /* margin: 60px 0; */
+  /* height: 100%; */
+}
+
+.whiteBox {
+  width: 525px;
+  height: 641px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-top: 60px;
+}
