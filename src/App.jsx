@@ -1,6 +1,7 @@
 import './App.css';
 import NewTransaction from './views/new-transaction/new-transaction';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ExchangeCurrency from './views/exchangeCurrency/exchangeCurrency';
 import CurrencyList from './views/currency-list/currency-list';
 import CurrencyDetails from './views/currency-details/currencyDetail';
 import EditCurrency from './views/edit-currency/edit-currency';
