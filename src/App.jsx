@@ -1,14 +1,13 @@
 import './App.css';
 
-import CurrerncyDetails from './view/currencyDetails/currencyDetail';
+// import CurrerncyDetails from './view/currencyDetails/currencyDetail';
+import ExchangeCurrency from './view/exchangeCurrency/exchangeCurrency';
 
 const App = () => {
   return (
-    <main>
      
-      <CurrerncyDetails />
+      <ExchangeCurrency />
 
-    </main>
   );
 };
 
