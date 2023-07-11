@@ -9,9 +9,9 @@ body {
   padding: 40px 0 60px 0;
 }
 
-.whiteBox {
+.currency-detail-container {
   width: 525px;
-  height: 641px;
+  height: 700px;
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);

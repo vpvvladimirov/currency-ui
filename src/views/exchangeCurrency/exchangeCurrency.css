@@ -1,21 +1,20 @@
-@font-face 
-{
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
 }
-@font-face 
-{
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
 }
-@font-face 
-{
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -23,47 +22,45 @@
   src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlvAw.ttf) format('truetype');
 }
 
-body
-{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
 .whiteBox {
-    width: 652px;
-    height: 577px;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    margin-top: 60px;
-  }
-  .text
-  {
-    color: #000;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    font-family: R;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 56px;
-    padding-top: 90px;
-    font-family: 'Roboto', sans-serif;
+  width: 652px;
+  height: 577px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.text {
+  color: #000;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  font-family: R;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  padding-top: 90px;
+  font-family: 'Roboto', sans-serif;
 
 
-  }
+}
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 26px;
-    margin-right: 26px;
-    padding-top: 50px;
-  }
-  
- .border
- {
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 26px;
+  margin-right: 26px;
+  padding-top: 50px;
+}
+
+.border {
   height: 81px;
   width: 235px;
   border-radius: 20px;
@@ -71,10 +68,9 @@ body
   box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.10);
   display: flex;
   justify-content: space-between;
- }
+}
 
- .exchangeButton
- {
+.exchangeButton {
 
   height: 60px;
   width: 188px;
@@ -95,46 +91,46 @@ body
   margin-top: 80px;
 
 
- }
- .exchangeButton:hover{background: #48ac98ae;}
-.amountField 
-{
+}
+
+.exchangeButton:hover {
+  background: #48ac98ae;
+}
+
+.amountField {
   font-size: 300px;
   font-family: 'Roboto', sans-serif;
 }
 
-.currency-menu-container 
-{
+.currency-menu-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  
+
 }
 
- 
- .currency-menu-container select 
- {
+
+.currency-menu-container select {
   width: 70px;
   font-size: 16px;
   height: 50px;
   border: none;
   background-color: white;
   padding: 5px;
-  margin-right:10px;
-  margin-top:10px;
+  margin-right: 10px;
+  margin-top: 10px;
   font-family: 'Roboto', sans-serif;
 
 }
-.inputStyle
-{
+
+.inputStyle {
   font-size: 20px;
   width: 100px;
   height: 50px;
-  border:none;
+  border: none;
   margin-top: 15px;
-  margin-left:20px;
-  
+  margin-left: 20px;
+  outline: none;
 
 }
-
