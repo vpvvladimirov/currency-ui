@@ -8,6 +8,10 @@ const CurrencyListBar = () => {
     exchangeableButtonClicked({ exchangeable: !exchangeableButton.exchangeable });
   };
 
+  const addOnClick = () => {
+    window.location.href = `/add-currency`;
+  };
+
   return (
     <div className="currency-list-bar">
       <div className="currency-name-info">Currency</div>
@@ -16,7 +20,7 @@ const CurrencyListBar = () => {
           backgroundColor: exchangeableButton.exchangeable ? 'rgb(53, 112, 100)' : 'white',
           color: exchangeableButton.exchangeable ? 'white' : 'rgba(72, 172, 152, 1)'
         }}>EXCHANGEABLE</button>
-      <button className="add-currency-btn" type="button">ADD</button>
+      <button className="add-currency-btn" type="button" onClick={addOnClick}>ADD</button>
     </div>
   );
 };

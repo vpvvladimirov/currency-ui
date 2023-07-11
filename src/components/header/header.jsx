@@ -11,10 +11,17 @@ const Header = () => {
       console.error(error);
     }
   };
+
+  const logoOnClick = () => {
+    window.location.href = '/';
+  }
+
   return (
     <header className="alivolut-header">
       <div className="alivolut-logo-container">
-        <img className="alivolut-logo" src={alivolutLogo} alt="Alivolut" />
+        <button className="alivolut-logo-btn" type='button' onClick={logoOnClick}>
+          <img className="alivolut-logo" src={alivolutLogo} alt="Alivolut" />
+        </button>
       </div>
       <button className="logout-icon-btn" onClick={logout} type='button'>
         <img className='logout-icon' src={logoutIcon} alt="Log Out" />

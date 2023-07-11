@@ -16,6 +16,17 @@
   margin-left: 120px;
 }
 
+.alivolut-logo {
+  height: 50px;
+  margin-left: auto;
+}
+
+.alivolut-logo-btn {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 .logout-icon {
   height: 36px;
   margin-right: 64px;
