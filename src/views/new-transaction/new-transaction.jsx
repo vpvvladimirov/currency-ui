@@ -4,16 +4,17 @@ import { testObject } from '../currency-details/currencyDetail';
 
 const NewTransaction = () => {
 
-  const [withdrawalButton, withdrawalButtonClicked] = useState({ withdrawal: true });
+  const [withdrawalButton, setWithdrawalButton] = useState(true);
+  const [depositButton, setDepositButton] = useState(false);
 
   const handleWithdrawalClick = () => {
-    withdrawalButtonClicked({ withdrawal: !withdrawalButton.withdrawal });
+    setWithdrawalButton(true);
+    setDepositButton(false);
   };
 
-  const [depositButton, depositButtonClicked] = useState({ deposit: false });
-
   const handleDepositClick = () => {
-    depositButtonClicked({ deposit: !depositButton.deposit });
+    setWithdrawalButton(false);
+    setDepositButton(true);
   };
 
   return (
@@ -32,23 +33,37 @@ const NewTransaction = () => {
             </div>
           </div>
           <div className="withdrawal-deposit-container">
-            <button className="withdrawal-btn" type='button' onClick={handleWithdrawalClick}
+            <button
+              className="withdrawal-btn"
+              type='button'
+              onClick={handleWithdrawalClick}
               style={{
-                backgroundColor: withdrawalButton.withdrawal ? 'rgb(53, 112, 100)' : 'white',
-                color: withdrawalButton.withdrawal ? 'white' : 'rgba(72, 172, 152, 1)',
-                border: withdrawalButton.withdrawal ? '2px solid var(--primary-color, white)' : '2px solid var(--primary-color, #48AC98)'
-              }}> Withdrawal</button>
-            <button className="deposit-btn" type='button' onClick={handleDepositClick}
+                backgroundColor: withdrawalButton ? 'rgb(53, 112, 100)' : 'white',
+                color: withdrawalButton ? 'white' : 'rgba(72, 172, 152, 1)',
+                border: withdrawalButton ? '2px solid var(--primary-color, white)' : '2px solid var(--primary-color, #48AC98)',
+                pointerEvents: withdrawalButton ? 'none' : 'auto'
+              }}
+            >
+              Withdrawal
+            </button>
+            <button
+              className="deposit-btn"
+              type='button'
+              onClick={handleDepositClick}
               style={{
-                backgroundColor: depositButton.deposit ? 'rgb(53, 112, 100)' : 'white',
-                color: depositButton.deposit ? 'white' : 'rgba(72, 172, 152, 1)',
-                border: depositButton.deposit ? '2px solid var(--primary-color, white)' : '2px solid var(--primary-color, #48AC98)'
-              }}>Deposit</button>
+                backgroundColor: depositButton ? 'rgb(53, 112, 100)' : 'white',
+                color: depositButton ? 'white' : 'rgba(72, 172, 152, 1)',
+                border: depositButton ? '2px solid var(--primary-color, white)' : '2px solid var(--primary-color, #48AC98)',
+                pointerEvents: depositButton ? 'none' : 'auto'
+              }}
+            >
+              Deposit
+            </button>
           </div>
           <div className="create-transaction-btn">CREATE</div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

@@ -18,7 +18,8 @@ const CurrencyListBar = () => {
       <button className="exchangeable-currency-btn" type="button" onClick={handleClick}
         style={{
           backgroundColor: exchangeableButton.exchangeable ? 'rgb(53, 112, 100)' : 'white',
-          color: exchangeableButton.exchangeable ? 'white' : 'rgba(72, 172, 152, 1)'
+          color: exchangeableButton.exchangeable ? 'white' : 'rgba(72, 172, 152, 1)',
+          border: exchangeableButton.exchangeable ? '1px solid var(--primary-color, rgb(53, 112, 100)' : '1px solid var(--white-color, #FFF)'
         }}>EXCHANGEABLE</button>
       <button className="add-currency-btn" type="button" onClick={addOnClick}>ADD</button>
     </div>
