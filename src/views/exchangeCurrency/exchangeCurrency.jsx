@@ -26,9 +26,9 @@ const ExchangeCurrency = () => {
             </select>
           </div>
         </div>
-
-        <img src={Layer1} alt="Layer_1" />
-
+        <div className="swap-currencies-img">
+          <img src={Layer1} alt="Layer_1" />
+        </div>
         <div className='border'>
           <input className='inputStyle'
             type="text"

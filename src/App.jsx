@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NewTransaction from './views/new-transaction/new-transaction';
 import ExchangeCurrency from './views/exchangeCurrency/exchangeCurrency';
 import CurrencyList from './views/currency-list/currency-list';
@@ -14,12 +14,14 @@ const App = () => {
       <Header />
       <Router>
         <Routes>
-          <Route path='/' element={<CurrencyList />} />
+          <Route path='/all-currencies' element={<CurrencyList />} />
           <Route path='/currency-info/:isoCode' element={<CurrencyDetails />} />
           <Route path='/new-transaction' element={<NewTransaction />} />
           <Route path='/edit-currency/:isoCode' element={<EditCurrency />} />
           <Route path='/add-currency' element={<AddCurrency />} />
           <Route path='/exchange-currency' element={<ExchangeCurrency />} />
+          <Route index element={<Navigate replace to="/all-currencies" />} />
+          <Route path="/all-currencies" element={<CurrencyList />} />
         </Routes>
       </Router>
     </>

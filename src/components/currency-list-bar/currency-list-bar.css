@@ -15,12 +15,21 @@
   font-weight: 700;
   line-height: 26px;
   letter-spacing: 0.46px;
-  background-color: rgba(255, 255, 255, 1);
   padding: 8px 22px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.exchangeable-currency-btn.exchangeable {
+  background-color: rgb(53, 112, 100);
+  color: white;
+  border: 1px solid var(--primary-color, rgb(53, 112, 100));
+}
+
+.exchangeable-currency-btn:not(.exchangeable) {
+  background-color: rgba(255, 255, 255, 1);
   border: 1px solid var(--white-color, #FFF);
   color: rgba(72, 172, 152, 1);
-  cursor: pointer;
 }
 
 .add-currency-btn {
