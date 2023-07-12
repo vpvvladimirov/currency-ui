@@ -20,7 +20,8 @@ const App = () => {
           <Route path='/edit-currency/:isoCode' element={<EditCurrency />} />
           <Route path='/add-currency' element={<AddCurrency />} />
           <Route path='/exchange-currency' element={<ExchangeCurrency />} />
-          <Route path='/*' element={<Navigate to='/all-currencies' replace />} />
+          <Route index element={<Navigate replace to="/all-currencies" />} />
+          <Route path="/all-currencies" element={<CurrencyList />} />
         </Routes>
       </Router>
     </>
