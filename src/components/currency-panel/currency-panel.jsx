@@ -26,7 +26,7 @@ const CurrencyPanel = () => {
             <button className="edit-currency-btn" type="button" onClick={() => editOnClick(isoCode)}>
               <img className="edit-currency-icon" src={EditCurrencyIcon} alt="Edit" />
             </button>
-            <button className="info-currency-btn" type="button" onClick={() => infoOnClick(index)}>
+            <button className="info-currency-btn" type="button" onClick={() => infoOnClick(isoCode)}>
               <img className="info-currency-icon" src={InfoCurrencyIcon} alt="Info" />
             </button>
           </div>

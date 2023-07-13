@@ -31,7 +31,7 @@ body {
   height: 577px;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.10);
   margin: 0 auto;
   margin-top: 60px;
 }
@@ -145,4 +145,12 @@ body {
 .exchangeButton:hover {
   background-color: rgb(96, 190, 172);
   transition: 0.2s;
+}
+
+.error-message {
+  color: red;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
 }

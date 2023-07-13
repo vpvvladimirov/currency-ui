@@ -13,6 +13,12 @@ const AddCurrency = () => {
             </div>
           </div>
           <div className="container">
+            <div className="label">Symbol</div>
+            <div className="field">
+              <input type="text" />
+            </div>
+          </div>
+          <div className="container">
             <div className="label">ISO Code</div>
             <div className="field">
               <input type="text" />

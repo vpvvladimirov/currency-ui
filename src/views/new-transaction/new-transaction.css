@@ -12,7 +12,7 @@
   background-color: white;
   margin: 67px 0px 0px 0px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
 .create-new-transaction-text {
@@ -122,4 +122,10 @@
 .create-transaction-btn:hover {
   background-color: rgb(96, 190, 172);
   transition: 0.2s;
+}
+
+.error-message-transaction {
+  color: red;
+  margin-top: -30px;
+  text-align: center;
 }

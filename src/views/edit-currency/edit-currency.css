@@ -12,7 +12,7 @@
   background-color: white;
   margin: 67px 0px 0px 0px;
   border-radius: 20px;
-  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.10);
 }
 
 .edit-currency-text {
@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 
-.field {
+.edit-field {
   height: 40px;
   width: 200px;
   box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.15);
@@ -51,12 +51,13 @@
   align-items: center;
 }
 
-.field input {
+.edit-field input {
   height: 80%;
-  width: 70%;
+  width: 90%;
   font-size: 24px;
   border: none;
   outline: none;
+  text-align: right;
 }
 
 .save-btn-container {
