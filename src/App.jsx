@@ -23,8 +23,8 @@ const App = () => {
           <Route path='/exchange-currency' element={<ExchangeCurrency />} />
           <Route index element={<Navigate replace to="/all-currencies" />} />
           <Route path="/all-currencies" element={<CurrencyList />} />
-          <Route path="/error404" element={<Error404 />} />
-          <Route path='/*' element={<Navigate to="/error404" replace />} />
+          <Route path="/error-404" element={<Error404 />} />
+          <Route path='/*' element={<Navigate to="/error-404" replace />} />
         </Routes>
       </Router>
     </>

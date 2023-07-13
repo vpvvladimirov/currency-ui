@@ -13,20 +13,24 @@ export const testObject = {
 };
 
 const CurrencyDetails = () => {
-  return (
-    <div className='currency-detail-container'>
-      <h1 className="currencyDetailsText">Currency Details</h1>
-      <CurrerncyDetailComponent title="Name" value={testObject.name[0]} />
-      <CurrerncyDetailComponent title="ISO Code" value={testObject.isoCode[0]} />
-      <CurrerncyDetailComponent title="Surcharge Percentage" value={`${testObject.surchargePerc[0]}%`} />
-      <CurrerncyDetailComponent title="Surcharge Amount" value={testObject.surchargeAmount[0]} />
-      <CurrerncyDetailComponent title="Balance" value={`${testObject.balance[0]}${testObject.symbol[0]}`} />
-      <CurrerncyDetailComponent
-        title='Exchange Enabled'
-        value={testObject.exchangeEnabled[0] ? 'Yes' : 'No'}
-      />
-    </div>
-  );
+  const renderCurrencyComponents = () => {
+    return testObject.isoCode.map((isoCode, index) => (
+      <div key={isoCode} className='currency-detail-container'>
+        <h1 className="currencyDetailsText">Currency Details</h1>
+        <CurrerncyDetailComponent title="Name" value={testObject.name[index]} />
+        <CurrerncyDetailComponent title="ISO Code" value={isoCode} />
+        <CurrerncyDetailComponent title="Surcharge Percentage" value={`${testObject.surchargePerc[index]}%`} />
+        <CurrerncyDetailComponent title="Surcharge Amount" value={testObject.surchargeAmount[index]} />
+        <CurrerncyDetailComponent title="Balance" value={`${testObject.balance[index]} ${testObject.symbol[index]}`} />
+        <CurrerncyDetailComponent
+          title='Exchange Enabled'
+          value={testObject.exchangeEnabled[index] ? 'Yes' : 'No'}
+        />
+      </div>
+    ));
+  };
+
+  return <div>{renderCurrencyComponents()}</div>;
 };
 
 export default CurrencyDetails;

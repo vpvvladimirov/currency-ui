@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { testObject } from '../currency-details/currencyDetail';
 
 const NewTransaction = () => {
-
   const [withdrawalButton, setWithdrawalButton] = useState(true);
   const [depositButton, setDepositButton] = useState(false);
 
@@ -17,6 +16,14 @@ const NewTransaction = () => {
     setDepositButton(true);
   };
 
+  const createCurrencyOptions = () => {
+    return testObject.isoCode.map((isoCode) => (
+      <option key={isoCode} value={isoCode}>
+        {isoCode}
+      </option>
+    ));
+  };
+
   return (
     <div className="transaction-main">
       <div className="transaction-box">
@@ -28,14 +35,14 @@ const NewTransaction = () => {
             </div>
             <div className="dropdown-container">
               <select>
-                <option value={testObject.isoCode}>{testObject.isoCode}</option>
+                {createCurrencyOptions()}
               </select>
             </div>
           </div>
           <div className="withdrawal-deposit-container">
             <button
               className="withdrawal-btn"
-              type='button'
+              type="button"
               onClick={handleWithdrawalClick}
               style={{
                 backgroundColor: withdrawalButton ? 'rgb(53, 112, 100)' : 'white',
@@ -48,7 +55,7 @@ const NewTransaction = () => {
             </button>
             <button
               className="deposit-btn"
-              type='button'
+              type="button"
               onClick={handleDepositClick}
               style={{
                 backgroundColor: depositButton ? 'rgb(53, 112, 100)' : 'white',

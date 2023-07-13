@@ -10,19 +10,19 @@ const EditCurrency = () => {
           <div className="container">
             <div className="label">Name</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.name} />
+              <input type="text" defaultValue={testObject.name[0]} />
             </div>
           </div>
           <div className="container">
             <div className="label">ISO Code</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.isoCode} />
+              <input type="text" defaultValue={testObject.isoCode[0]} />
             </div>
           </div>
           <div className="container">
             <div className="label">Surcharge Percent</div>
             <div className="field">
-              <input type="text" defaultValue={testObject.surchargePerc} />
+              <input type="text" defaultValue={testObject.surchargePerc[0]} />
             </div>
           </div>
           <div className="save-btn-container">

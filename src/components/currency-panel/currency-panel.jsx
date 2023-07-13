@@ -5,14 +5,14 @@ import InfoCurrencyIcon from '../../images/info-currency-icon.png';
 import { testObject } from '../../views/currency-details/currencyDetail';
 
 const CurrencyPanel = () => {
-  const navigate = useNavigate(); // Get the navigate function from React Router
+  const navigate = useNavigate();
 
   const infoOnClick = (isoCode) => {
-    navigate(`/currency-info/${isoCode}`); // Use navigate to navigate to the currency info page
+    navigate(`/currency-info/${isoCode}`);
   };
 
   const editOnClick = (isoCode) => {
-    navigate(`/edit-currency/${isoCode}`); // Use navigate to navigate to the edit currency page
+    navigate(`/edit-currency/${isoCode}`);
   };
 
   const renderCurrencyComponents = () => {
@@ -26,7 +26,7 @@ const CurrencyPanel = () => {
             <button className="edit-currency-btn" type="button" onClick={() => editOnClick(isoCode)}>
               <img className="edit-currency-icon" src={EditCurrencyIcon} alt="Edit" />
             </button>
-            <button className="info-currency-btn" type="button" onClick={() => infoOnClick(isoCode)}>
+            <button className="info-currency-btn" type="button" onClick={() => infoOnClick(index)}>
               <img className="info-currency-icon" src={InfoCurrencyIcon} alt="Info" />
             </button>
           </div>
