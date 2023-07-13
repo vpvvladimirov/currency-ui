@@ -75,8 +75,13 @@ body {
   margin-top: 15px;
 }
 
-.exchangeButton {
+.swap-currencies-btn {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
 
+.exchangeButton {
   height: 60px;
   width: 188px;
   background: #48AC98;
@@ -94,8 +99,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 110px;
-
-
+  cursor: pointer;
 }
 
 .exchangeButton:hover {

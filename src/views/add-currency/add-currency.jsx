@@ -19,7 +19,7 @@ const AddCurrency = () => {
             </div>
           </div>
           <div className="container">
-            <div className="label">Surcharge Percent</div>
+            <div className="label">Surcharge Percentage</div>
             <div className="field">
               <input type="text" />
             </div>
